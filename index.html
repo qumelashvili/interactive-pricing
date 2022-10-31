@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pricing Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="header">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </section>
+    <main> 
+        <section class="pricing-range">
+            <p>
+                <span class="selected-range">100K</span> PAGEVIEWS
+            </p>   
+            <input type="range" name="pageview" id="pageview" class="range-input" min="0" max="12">
+            <p >
+               <span class="selected-range_price">$16.00</span> / month
+            </p>
+        </section>
+
+        <section class="billing">
+            <p> Monthly billing </p>
+            <label class="switch">
+                <input type="checkbox" class="checkbox">
+                <span class="slider"></span>
+            </label>
+            <p>Yealry billing</p>
+            <div>
+                <p class="discount">
+                    -25%
+                </p>
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <section class="footer">
+            <div>
+                <p><img src="" class="check"> Unlimited websites</p>
+                <p><img src="" class="check"> 100% data ownership</p>
+                <p><img src="" class="check"> Email reports</p>
+            </div>
+            <button class="submit">
+                Start my trial
+            </button>
+        </section>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
