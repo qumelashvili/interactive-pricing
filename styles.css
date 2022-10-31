@@ -40,18 +40,24 @@ main{
 }
 .pricing-range{
     padding: 0px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.71429px;
+
 }
 .range-input{
-    width: 100%
+    width: 100%;
 }
 .selected-range{
     margin: 0px;
-    letter-spacing: 1.71429px;
     font-weight: 800;
 }
 .selected-range_price{
     font-size: 32px;
     color: #293356;
+    order: 3;
 }
 input[type=range] {
      -webkit-appearance: none;
@@ -93,13 +99,14 @@ input[type=range] {
 }
 .billing > div{
     background-color:  #FEEDE8;
-    width: 41px;
+    width: auto;
     height: 19px;
     border-radius: 9.5px;
     font-size: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px 5px;
 }
 .billing > p{
     margin: 5px;
@@ -122,6 +129,11 @@ button{
     margin-top: 20px;
     font-weight: 800;
     border: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+button:hover{
+    color: #FFFFFF;
 }
 .discount{
     color: #FF8D68;
@@ -186,6 +198,8 @@ input:checked + .slider:before{
 }
 
 
+
+
 @media screen and (min-width: 600px) {
     .footer{
         justify-content: space-evenly;
@@ -197,6 +211,27 @@ input:checked + .slider:before{
         font-size: 15px;
         width: auto;
     }
+    .pricing-range{
+        justify-content: space-between;
+    }
+    .selected-range_price{
+        order: 2;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .range-input{
+        order: 3;
+    }
+    .pricing-range > p {
+        font-size: 16px;
+    }
+    .discount::after{
+        content: "discount";
+    }
+    .footer{
+        text-align: start;
+    }
+    
 }
 @media screen and (min-width: 1450px){
     body{
