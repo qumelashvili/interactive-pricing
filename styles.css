@@ -1,0 +1,210 @@
+*{
+    font-family: 'Manrope', sans-serif;
+    color: #848EAD;
+    margin: 0px;
+}
+body{
+    background-image: url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    padding: 0px 24px;
+    background-color: hsl(230, 100%, 99%);
+}
+.header{
+    text-align: center;
+    background-image: url(./images/pattern-circles.svg);
+    background-position-x:center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    height: 150px;
+    margin-top: 50px;
+}
+.header h1{
+    font-size: 20px;
+    color: #293356;
+}
+.header p{
+    font-size: 13px;
+    width: 180px;
+    margin: 10px auto;
+}
+main{
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    padding: 32px 0px;
+    max-width: 540px;
+    margin: 0px auto;
+}
+.pricing-range{
+    padding: 0px 24px;
+}
+.range-input{
+    width: 100%
+}
+.selected-range{
+    margin: 0px;
+    letter-spacing: 1.71429px;
+    font-weight: 800;
+}
+.selected-range_price{
+    font-size: 32px;
+    color: #293356;
+}
+input[type=range] {
+     -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) 50%,
+    hsl(224, 65%, 95%) 50%, hsl(224, 65%, 95%) 100%);
+    height: 8px;
+    margin: 40px 0px;
+    border-radius: 5px;
+}
+.range-input::-webkit-slider-thumb {
+    margin-top: -3px; /* Centers thumb on the track */
+    height: 40px;
+    width: 40px;
+    -webkit-appearance: none; 
+    background-image: url(./images/icon-slider.svg);  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: #10D8C4;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    border-radius: 100%;
+    cursor:grab;
+    -webkit-transition: .4s;
+    transition: .4s;
+} 
+
+.range-input::-webkit-slider-thumb:hover{
+    background-color: #7AEADF;
+}
+.range-input::-webkit-slider-thumb:active{
+    background-color:#24AEA1 ;
+}
+
+.billing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.billing > div{
+    background-color:  #FEEDE8;
+    width: 41px;
+    height: 19px;
+    border-radius: 9.5px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.billing > p{
+    margin: 5px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #ECF0FB;
+    margin-top: 40px;
+}
+.check{
+    content: url(./images/icon-check.svg);
+}
+button{
+    width: 170px;
+    height: 40px;
+    background: #293356;
+    border-radius: 20.5px;
+    color: #BECDFF;
+    margin-top: 20px;
+    font-weight: 800;
+    border: transparent;
+}
+.discount{
+    color: #FF8D68;
+}
+.footer{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.footer p {
+    margin: 15px;
+}
+.footer img{
+    margin-right: 5px;
+}
+
+/* Toggle Switch Button Styles */ 
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 22px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #CFD8EF;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 34px;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition : .3s;
+    transition: .3s;
+    border-radius: 50%;
+}
+input:checked + .slider{
+    background-color: #2196F3;
+}
+input:checked + .slider:before{
+    -webkit-transform : translateX(21px);
+    -ms-transform:  translateX(21px);
+    transform: translateX(21px);
+}
+
+
+@media screen and (min-width: 600px) {
+    .footer{
+        justify-content: space-evenly;
+    }
+    .header h1{
+        font-size: 28px;
+    }
+    .header p{
+        font-size: 15px;
+        width: auto;
+    }
+}
+@media screen and (min-width: 1450px){
+    body{
+        background-size: 100%;
+    }
+}
+
+
+
+
+
